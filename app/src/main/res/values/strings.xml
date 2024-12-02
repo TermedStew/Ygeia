@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Ygeia</string>
+    <!-- this is a comment -->
+
+    <string name="level_text">Level %1$d</string>
+    <!-- Welcome Page -->
+    <string name="new_to_ygeia_sign_up_here">New to <font fgcolor="#81DE75">Ygeia</font>? Sign Up Here.</string>
+    <!-- Sign Up Page -->
+    <string name="sign_up"><font fgcolor="#81DE75">Sign</font> Up</string>
+    <!-- Login Page -->
+    <string name="welcome_back"><font fgcolor="#81DE75">Welcome</font> Back</string>
+    <!-- Home Page -->
+    <string name="hello_user">Hello, <font fgcolor="#81DE75">User</font>!</string>
+    <string name="challenges_for_today"><font fgcolor="#81DE75">Challenges </font>for Today</string>
+    <string name="steps_leaderboards"><font fgcolor="#81DE75">Steps </font>Leaderboard <font fgcolor="#81DE75">(Friends)</font></string>
+</resources>

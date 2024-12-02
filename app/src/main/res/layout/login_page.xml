@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282827"
+    tools:context=".LoginPage" >
+
+    <TextView
+        android:id="@+id/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lora_bold"
+        android:letterSpacing="0.06"
+        android:text="@string/welcome_back"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125"
+        tools:text="Welcome Back" />
+
+    <TextView
+        android:id="@+id/enter_your_credentials_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:alpha="0.5"
+        android:fontFamily="@font/nunito_sans"
+        android:text="Enter your credentials to login"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_3" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_email_3"
+        android:layout_width="359dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/input_field"
+        android:fontFamily="@font/nunito_sans"
+        android:hint="Email"
+        android:textColorHint="#41FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_your_credentials_3" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_password_3"
+        android:layout_width="359dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_field"
+        android:fontFamily="@font/nunito_sans"
+        android:hint="Password"
+        android:textColorHint="#41FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_email_3" />
+
+    <Button
+        android:id="@+id/login_button_3"
+        android:layout_width="192dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/sapphire"
+        android:fontFamily="@font/nunito_sans"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_password_3" />
+
+    <TextView
+        android:id="@+id/forgot_password_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lora_medium"
+        android:text="Forgot Password?"
+        android:textAlignment="center"
+        android:textColor="@color/pale_azure"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button_3" />
+
+    <TextView
+        android:id="@+id/signup_text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/lora_medium"
+        android:text="Don't have an account? Sign Up"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgot_password_3" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

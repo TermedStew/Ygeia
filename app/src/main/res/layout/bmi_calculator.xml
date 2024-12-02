@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282827"
+    tools:context=".BMICalculator">
+
+    <LinearLayout
+        android:id="@+id/nav_bar_6"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:background="#232322"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home_page_icon_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/home_page_icon"
+            app:tint="@color/white"/>
+
+        <ImageView
+            android:id="@+id/challenges_icon_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/challenges_icon"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/bmi_calculator_icon_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/bmi_calculator_icon"
+            app:tint="@color/sapphire"/>
+
+        <ImageView
+            android:id="@+id/workout_icon_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/workout_icon" />
+
+        <ImageView
+            android:id="@+id/more_options_icon_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/more_options_icon" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bmi_calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:fontFamily="@font/lora_bold"
+        android:letterSpacing="0.11"
+        android:text="BMI Calculator"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Sex"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmi_calculator" />
+
+    <ImageView
+        android:id="@+id/sex_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sex"
+        app:srcCompat="@drawable/sex_male" />
+
+    <ImageView
+        android:id="@+id/sex_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sex"
+        app:srcCompat="@drawable/sex_female" />
+
+    <TextView
+        android:id="@+id/age_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Age"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:letterSpacing="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sex_male" />
+
+    <TextView
+        android:id="@+id/height_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Height"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:letterSpacing="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age_input" />
+
+    <TextView
+        android:id="@+id/weight_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Weight"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:letterSpacing="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/height_input" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/age_input"
+        android:layout_width="243.67dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.3"
+        android:background="@drawable/input_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age_6" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/height_input"
+        android:layout_width="243.67dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.3"
+        android:background="@drawable/input_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/height_6" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/weight_input"
+        android:layout_width="243.67dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.3"
+        android:background="@drawable/input_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight_6" />
+
+    <Button
+        android:id="@+id/calculate_button_6"
+        android:layout_width="278dp"
+        android:layout_height="58dp"
+        android:backgroundTint="@color/sapphire"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:letterSpacing="0.06"
+        android:text="Calculate"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bar_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight_input" />
+</androidx.constraintlayout.widget.ConstraintLayout>

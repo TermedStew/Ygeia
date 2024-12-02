@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282827"
+    tools:context=".WelcomePage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frist_constraint_1"
+        android:layout_width="match_parent"
+        android:layout_height="505dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ygeia_logo"
+            android:layout_width="350dp"
+            android:layout_height="181dp"
+            android:layout_marginTop="110dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ygeia_logo_transformed" />
+
+        <TextView
+            android:id="@+id/motto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans"
+            android:letterSpacing="0.28"
+            android:text="Fit Beyond Limits"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ygeia_logo"
+            tools:text="Fit Beyond Limits" />
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/lora_bold"
+            android:text="@string/new_to_ygeia_sign_up_here"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/motto"
+            tools:text="New to Ygeia? Sign Up Here." />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/second_constraint_1"
+        android:layout_width="match_parent"
+        android:layout_height="416dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sign_up_button_1"
+            android:layout_width="343.5dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:backgroundTint="@color/sapphire"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sign_up_google"
+            android:layout_width="340dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/button_border"
+            android:fontFamily="@font/nunito_sans"
+            android:padding="0.05dp"
+            android:text="Continue with Google"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:backgroundTint="@color/sapphire"
+            app:icon="@drawable/google_logo"
+            app:iconGravity="textStart"
+            app:iconSize="31dp"
+            app:iconTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sign_up_button_1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sign_up_facebook"
+            android:layout_width="340dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/button_border"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Continue with Facebook"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:backgroundTint="@color/sapphire"
+            app:icon="@drawable/facebook_logo"
+            app:iconGravity="textStart"
+            app:iconSize="31dp"
+            app:iconTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sign_up_google" />
+
+        <TextView
+            android:id="@+id/sign_up_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:alpha="0.5"
+            android:fontFamily="@font/nunito_sans"
+            android:text="or"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sign_up_facebook" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_button_1"
+            android:layout_width="153dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="21dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:backgroundTint="@color/sapphire"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sign_up_divider" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282827"
+    tools:context=".HomePage">
+
+    <ImageView
+        android:id="@+id/shop_icon_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shop_icon" />
+
+    <TextView
+        android:id="@+id/hello_user_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/lora_bold"
+        android:letterSpacing="0.11"
+        android:text="@string/hello_user"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Hello, User!" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/stats_layout_4"
+        android:layout_width="372dp"
+        android:layout_height="388dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/views"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hello_user_4">
+
+        <View
+            android:id="@+id/stats_layout_horizontal_divider"
+            android:layout_width="337dp"
+            android:layout_height="2dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:alpha="0.25"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/stats_layout_1stvertical_divider"
+            android:layout_width="2dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:alpha="0.25"
+            android:background="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/stats_layout_horizontal_divider"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/stats_layout_2ndvertical_divider"
+            android:layout_width="2dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:alpha="0.25"
+            android:background="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/stats_layout_horizontal_divider"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/person_icon" />
+
+        <TextView
+            android:id="@+id/today_stats_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/lora_bold"
+            android:letterSpacing="0.2"
+            android:text="Today's Stats"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/stats_layout_1stvertical_divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/stats_steps_dummy_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="--"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/stats_layout_horizontal_divider"
+            app:layout_constraintEnd_toStartOf="@+id/stats_layout_1stvertical_divider"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/stats_cal_dummy_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="--"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/stats_layout_horizontal_divider"
+            app:layout_constraintEnd_toStartOf="@+id/stats_layout_2ndvertical_divider"
+            app:layout_constraintStart_toEndOf="@+id/stats_layout_1stvertical_divider" />
+
+        <TextView
+            android:id="@+id/stats_bpm_dummy_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="--"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/stats_layout_horizontal_divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/stats_layout_2ndvertical_divider" />
+
+        <TextView
+            android:id="@+id/steps_made_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:letterSpacing="0.2"
+            android:text="Steps Made"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toTopOf="@+id/stats_layout_horizontal_divider"
+            app:layout_constraintEnd_toStartOf="@+id/stats_layout_1stvertical_divider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stats_steps_dummy_4" />
+
+        <TextView
+            android:id="@+id/cal_burned_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:letterSpacing="0.2"
+            android:text="Calories Burned"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toTopOf="@+id/stats_layout_horizontal_divider"
+            app:layout_constraintEnd_toStartOf="@+id/stats_layout_2ndvertical_divider"
+            app:layout_constraintStart_toEndOf="@+id/stats_layout_1stvertical_divider"
+            app:layout_constraintTop_toBottomOf="@+id/stats_cal_dummy_4" />
+
+        <TextView
+            android:id="@+id/heart_rate_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:letterSpacing="0.2"
+            android:text="Heart Rate"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toTopOf="@+id/stats_layout_horizontal_divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/stats_layout_2ndvertical_divider"
+            app:layout_constraintTop_toBottomOf="@+id/stats_bpm_dummy_4" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/progress_bar_main_xp_4"
+            android:layout_width="293dp"
+            android:layout_height="13dp"
+            app:layout_constraintBottom_toTopOf="@+id/today_stats_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+            <ProgressBar
+                android:id="@+id/progress_bar_xp_4"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progressDrawable="@drawable/custom_progress_bar" />
+
+            <TextView
+                android:id="@+id/progress_bar_xp_text_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:fontFamily="@font/nunito_sans_extrabold"
+                android:letterSpacing="0.06"
+                android:text="0/20"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="6sp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/xp_left_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:letterSpacing="0.06"
+            android:text="20 more XP to Lvl. 2"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/today_stats_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progress_bar_main_xp_4" />
+
+        <TextView
+            android:id="@+id/current_lvl_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:letterSpacing="0.06"
+            android:text="Level 1"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/progress_bar_main_xp_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <ImageView
+            android:id="@+id/coins_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/coins" />
+
+        <TextView
+            android:id="@+id/coins_amount_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="10"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/coins_4"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_bar_4"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:background="#232322"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/home_page_icon_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:tint="@color/sapphire"
+            app:srcCompat="@drawable/home_page_icon" />
+
+        <ImageView
+            android:id="@+id/challenges_icon_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/challenges_icon" />
+
+        <ImageView
+            android:id="@+id/bmi_calculator_icon_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/bmi_calculator_icon" />
+
+        <ImageView
+            android:id="@+id/workout_icon_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/workout_icon" />
+
+        <ImageView
+            android:id="@+id/more_options_icon_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/more_options_icon" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/challenge_layout_4"
+        android:layout_width="372dp"
+        android:layout_height="198dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/views"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stats_layout_4">
+
+        <TextView
+            android:id="@+id/chall_today_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/lora_bold"
+            android:letterSpacing="0.2"
+            android:text="@string/challenges_for_today"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Challenges for Today" />
+
+        <ImageView
+            android:id="@+id/chall_task1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chall_today_4"
+            app:srcCompat="@drawable/chall_steps_icon" />
+
+        <ImageView
+            android:id="@+id/chall_task2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chall_task1"
+            app:srcCompat="@drawable/chall_cal_icon" />
+
+        <ImageView
+            android:id="@+id/chall_task3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chall_task2"
+            app:srcCompat="@drawable/chall_daily_icon" />
+
+        <TextView
+            android:id="@+id/chall_task1_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:letterSpacing="0.06"
+            android:text="Reach 10 000 steps"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/chall_task1"
+            app:layout_constraintTop_toBottomOf="@+id/chall_today_4" />
+
+        <TextView
+            android:id="@+id/chall_task2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:letterSpacing="0.06"
+            android:text="Burn 500 calories"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/chall_task1_text"
+            app:layout_constraintTop_toBottomOf="@+id/chall_task1" />
+
+        <TextView
+            android:id="@+id/chall_task3_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:letterSpacing="0.06"
+            android:text="Finish at least 1 Daily Challenge"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/chall_task2_text"
+            app:layout_constraintTop_toBottomOf="@+id/chall_task2" />
+
+        <RelativeLayout
+            android:id="@+id/chall_task1_bar_main"
+            android:layout_width="286dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/chall_task1"
+            app:layout_constraintTop_toBottomOf="@+id/chall_task1_text">
+
+            <ProgressBar
+                android:id="@+id/chall_task1_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progressDrawable="@drawable/custom_progress_bar" />
+
+            <TextView
+                android:id="@+id/chall_task1_bar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/nunito_sans_extrabold"
+                android:letterSpacing="0.06"
+                android:text="0/10 000"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="6sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chall_task2_bar_main"
+            android:layout_width="286dp"
+            android:layout_height="13dp"
+            app:layout_constraintStart_toStartOf="@+id/chall_task2_text"
+            app:layout_constraintTop_toBottomOf="@+id/chall_task2_text">
+
+            <ProgressBar
+                android:id="@+id/chall_task2_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progressDrawable="@drawable/custom_progress_bar"/>
+
+            <TextView
+                android:id="@+id/chall_task2_bar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/nunito_sans_extrabold"
+                android:letterSpacing="0.06"
+                android:text="0/500"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="6sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chall_task3_bar_main"
+            android:layout_width="286dp"
+            android:layout_height="13dp"
+            app:layout_constraintStart_toStartOf="@+id/chall_task3_text"
+            app:layout_constraintTop_toBottomOf="@+id/chall_task3_text">
+
+            <ProgressBar
+                android:id="@+id/chall_task3_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:progressDrawable="@drawable/custom_progress_bar"/>
+
+            <TextView
+                android:id="@+id/chall_task3_bar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/nunito_sans_extrabold"
+                android:letterSpacing="0.06"
+                android:text="0/1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="6sp" />
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/leaderboards_layout_4"
+        android:layout_width="372dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/views"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/challenge_layout_4">
+
+        <TextView
+            android:id="@+id/steps_boards_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/lora_bold"
+            android:letterSpacing="0.2"
+            android:text="@string/steps_leaderboards"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Steps Leaderboard (Friends)" />
+
+        <TextView
+            android:id="@+id/pos_dummy_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:letterSpacing="0.06"
+            android:lineSpacingMultiplier="1.17"
+            android:text="1st\n2nd\n3rd"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/steps_boards_4" />
+
+        <TextView
+            android:id="@+id/name_dummy_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:lineSpacingMultiplier="1.17"
+            android:text="--\n--\n--"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pos_dummy_4"
+            app:layout_constraintTop_toBottomOf="@+id/steps_boards_4" />
+
+        <TextView
+            android:id="@+id/steps_num_dummy_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:lineSpacingMultiplier="1.17"
+            android:text="--\n--\n--"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/steps_dummy_4"
+            app:layout_constraintTop_toBottomOf="@+id/steps_boards_4" />
+
+        <TextView
+            android:id="@+id/steps_dummy_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:lineSpacingMultiplier="1.17"
+            android:text="Steps\nSteps\nSteps"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/steps_boards_4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
